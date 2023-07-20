@@ -1,37 +1,25 @@
-body {
-    background-color: #blue;
-	font-family: sans-serif;
+.calculator {
+    max-inline-size: 30rem; /* This is the Logical Property for max-width and has very good browser support */
+    border-radius: 10px; /* Round the edges */
+    overflow: hidden; /* don't let other elements go outside the calculator */
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12); /* Give the calculator some depth off the page */
+  }
+  .calculator__output {
+    font-size: 2rem;
+    text-align: end; /* This is the Logical Property for text-align: right; and has very good browser support. */
+    background: hsl(202, 11%, 29%); /* background color */
+    color: hsl(255, 100%, 100%); /* text color */
+    padding-block-start: 0.25rem; /* Logical Property for padding-top */
+    padding-block-end: 0.25rem; /* Logical Property for padding-bottom */
+    padding-inline-end: 0.75rem; /* Logical Property for padding-right */
+  }
+  .calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+.calculator__key {
 }
-.container {
-    display: flex;
-	align-items: center;
-    border-radius: 20px;
-    height: 100vh;
-	width: 400px;
-	justify-content: center;
-    max-inline-size: 100rem;
-	
+.calculator__key--operator {
 }
-
-.output {
-   background-color: yellow;
-   background: hsl(203, 58%, 73%);
-   width: 200px;
-   font-weight: bold;
-   font-size: 50px;
-   text-align: end;
-}
-
-.buttons_value {
-   font-weight: bold;
-   font-size: 50px;
-   padding: 10rem;
-}
-
-.button {
-   background-color:aqua;
-   display: inline-block;
-   font-weight: bold;
-   font-size: 50px;
-   margin: 2px;
+.calculator__key--enter {
 }
