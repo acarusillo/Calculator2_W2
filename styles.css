@@ -5,25 +5,33 @@ body {
 .container {
     display: flex;
 	align-items: center;
+    border-radius: 20px;
     height: 100vh;
-	width: 100vw;
+	width: 400px;
 	justify-content: center;
+    max-inline-size: 100rem;
 	
 }
 
 .output {
    background-color: yellow;
+   background: hsl(203, 58%, 73%);
    width: 200px;
    font-weight: bold;
    font-size: 50px;
+   text-align: end;
 }
 
 .buttons_value {
    font-weight: bold;
    font-size: 50px;
+   padding: 10rem;
 }
 
 .button {
+   background-color:aqua;
+   display: inline-block;
    font-weight: bold;
    font-size: 50px;
+   margin: 2px;
 }
